@@ -38,12 +38,39 @@ body{
 .header{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     color: var(--color_1);
-    height: 10vh;
+    height: 15vh;
     align-items: center;
 } .header > header {
     text-align: center;
+    width: 50%;
+}
+
+.header > .nav-header {
+    width: 50%;
+}
+
+.header > .nav-header > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+} .header > .nav-header > ul > li > a{
+    text-decoration: none;
+    color: white;
+} .header > .nav-header > ul > li > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: var(--color_6);
+    margin: 0 auto;
+    transition: all .5s ease-in-out;
+} .header > .nav-header > ul > li > a:hover::after{
+    width: 58px;
+} .header > .nav-header > ul > li:last-child > a:hover::after{
+    width: 87px;
 }
 
 .main{
