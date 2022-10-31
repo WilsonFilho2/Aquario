@@ -73,6 +73,10 @@ body{
     width: 87px;
 }
 
+.button {
+    display: none;
+}
+
 .main{
     height: 90vh;
     background-color: var(--color_6);

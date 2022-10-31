@@ -2,4 +2,16 @@
     .header > .nav-header, .header > header  h3{
         display: none;
     }
+
+    .button{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+
+    .activate > span{
+        margin-top: 80%;
+        transform: rotate(45deg);
+    }
 }

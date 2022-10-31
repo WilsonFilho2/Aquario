@@ -25,6 +25,11 @@
                     <li><a href="calculadora/calculadora.html">Calculadora</a></li>
                 </ul>
             </nav>
+            <div class="button" id="button">
+                <span>―</span>
+                <span>―</span>
+                <span>―</span>
+            </div>
         </div>
         <div class="main">
             <main>
@@ -34,5 +39,19 @@
             </main>
         </div>
     </div>
+    <script>
+        let button = document.getElementById("button");
+        
+        function click () {
+            if (event.type === "touchstart"){
+                event.preventDefault();
+                button.classList.toggle("activate");
+            }
+        }
+
+        button.addEventListener("click", click);
+        button.addEventListener("touchstart", click);
+
+    </script>
 </body>
 </html>
