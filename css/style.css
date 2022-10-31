@@ -39,8 +39,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    color: var(--color_1);
-    height: 15vh;
+    color: var(--color_6);
+    height: 10vh;
     align-items: center;
 } .header > header {
     text-align: center;
