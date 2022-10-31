@@ -1,0 +1,107 @@
+@media  screen and (max-width: 810px) and (min-width: 501px){
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .nav-header {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header > .nav-header, .header > header  h3{
+        display: none;
+    }
+
+    .button{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button > span::after{
+        position: absolute;
+        content: "―";
+        top: 40%;
+        right: 0%;
+    }
+
+    .button > span::before{
+        position: absolute;
+        content: "―";
+        bottom: 40%;
+        right: 0%;
+    }
+
+    .activate > span::before {
+        display: none;
+    }
+
+    @keyframes animacao-menu-1{
+        to{
+            transform: rotate(90deg);
+        }
+    }
+
+    @keyframes animacao-menu-2 {
+        to {
+            transform: rotate(45deg);
+        }
+        
+    }
+
+    .activate > span::after {
+        top: 10%;
+        right: 0.1%;
+        animation: animacao-menu-1 .5s both;
+    }
+
+    .activate > span {
+        margin-bottom: 10%;
+        animation: both animacao-menu-2 .5s;
+    }
+
+
+    .start {
+        height: 100%;
+    }
+
+    .start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } .start .nav-header ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+    } .start .nav-header ul li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } .start .nav-header ul li a{
+        text-decoration: none;
+        color: white;
+        margin: 0 8% 0px 0;
+    } .start .nav-header ul li a::after {
+        position: absolute;
+        content: "";
+        width: 1000px;
+        height: 1px;
+        background-color: white;
+        top: 20px;
+        right: -200%;
+    }
+}
