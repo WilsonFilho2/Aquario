@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 98%;
+    height: 96%;
+}
+
+.introducao{
+    display: flex;
+    width: 100%;
+}
+
+.introducao .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.introducao .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+p{
+    text-align: justify;
+}
+
+.img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.img img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+    transition: all .5s ease-in-out;
+}
+
+.img img:hover{
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+}
+
+p{
+    padding: 0 20px;
+}
+
+.Cuidados{
+    
+}

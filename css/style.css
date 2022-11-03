@@ -26,13 +26,13 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    background-image: linear-gradient(45deg,var(--color_1), var(--color_2), var(--color_3), var(--color_4), var(--color_5));
+    width: 100vw;
+    height: auto;
 }
 
 .contends{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header{
@@ -41,6 +41,7 @@ body{
     color: var(--color_6);
     height: 10vh;
     align-items: center;
+    background-image: linear-gradient(45deg,var(--color_1), var(--color_2), var(--color_3), var(--color_4), var(--color_5));
 } .header > header {
     text-align: center;
     width: 50%;
@@ -53,18 +54,18 @@ body{
 }
 
 .header > .nav-header {
-    width: 80%;
+    width: 40%;
 }
 
 .header > .nav-header > ul{
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
 }.header > .nav-header > ul > li {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 } .header > .nav-header > ul > li > a{
     text-decoration: none;
     color: white;
@@ -91,7 +92,6 @@ body{
 }
 
 .main{
-    height: 90vh;
     background-color: var(--color_6);
 } .main > main {
     height: 100%;

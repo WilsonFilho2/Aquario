@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu_Aquario</title>
-    <link rel="stylesheet" href="css/css - header/style.css">
+    <title>Atlântida</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/css - header/media-querys.css">
+    <link rel="stylesheet" href="css/css - main/main.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <div class="contends">
         <div class="header">
             <header>
                 <hgroup>
-                    <h1>Aquario</h1>
-                    <h3>Ajuda à criação de peixes</h3>
+                    <h1>Atlântida</h1>
                 </hgroup>
             </header>
             <nav class="nav-header">
                 <ul>
-                    <li><a href="">Informações iniciais</a></li>
-                    <li><a href="">Numero</a></li>
-                    <li><a href="">Numero</a></li>
+                    <li><a href="#Introducao">Introdução</a></li>
+                    <li><a href="#Cuidados">Cuidados</a></li>
+                    <li><a href="">Fotos</a></li>
                     <li><a href="calculadora/calculadora.html">Calculadora</a></li>
                 </ul>
             </nav>
@@ -32,18 +37,50 @@
         <div class="menu-mobile">
             <nav class="nav-header">
                 <ul>
-                    <li><a href="">Numero</a></li>
-                    <li><a href="">Numero</a></li>
-                    <li><a href="">Numero</a></li>
+                    <li><a href="#Introducao">Introdução</a></li>
+                    <li><a href="#Cuidados">Cuidados</a></li>
+                    <li><a href="">Fotos</a></li>
                     <li><a href="calculadora/calculadora.html">Calculadora</a></li>
                 </ul>
             </nav>
         </div>
         <div class="main">
             <main>
-                <section class="section_1">
-                    
-                </section>
+                <div class="content">
+                    <section class="introducao" id="Introducao">
+                        <div class="left">
+                            <h2>Introdução</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, modi aliquam. Adipisci ipsam est perferendis eius, aut consectetur similique maiores repudiandae ullam voluptates odit corrupti fugiat reiciendis dolore error quam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat incidunt eum, harum quasi laudantium laboriosam est expedita obcaecati error doloribus doloremque dolore! Aperiam assumenda nihil harum porro officia ad et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maxime ipsum, rem debitis assumenda ducimus praesentium distinctio ipsam quia nemo eaque consequatur vero esse deserunt iste. Molestiae a eaque nobis?</p>
+                            <h3>A escolha do aquário</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis quisquam atque eveniet odit fuga doloremque perferendis maxime exercitationem, vel eligendi. Magnam, maxime fugiat! Earum totam reiciendis debitis quasi voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptate perspiciatis distinctio modi sequi quibusdam necessitatibus temporibus esse, reiciendis placeat quia qui neque maxime doloremque sit dolorum itaque est aspernatur.</p>
+                            <h3>Aquário de água doce</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim veritatis aut temporibus! Ullam natus quidem laboriosam, officia harum facilis, magni labore praesentium quia sed porro quos aut autem cum voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam, reprehenderit aliquid natus maiores sequi ratione eaque aspernatur hic, voluptate placeat sit quaerat eveniet eligendi alias, consectetur laborum. Qui, delectus?</p>
+                            <h3>Aquário de água salgada</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam, ipsam suscipit voluptatem exercitationem architecto delectus nostrum fugiat, recusandae autem ab beatae ut velit consectetur non veniam ipsa molestiae obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores aliquid aperiam aspernatur quibusdam dolorum sint, iure similique. Laboriosam earum omnis libero suscipit facilis tempore necessitatibus voluptate alias ullam quod!</p>
+                        </div>
+                        <div class="right">
+                            <div class="img">
+                                <img src="img/imagem_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Cuidados" id="Cuidados">
+                        <h2>Cuidados com o aquário</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur saepe quisquam hic deserunt, libero sit error accusantium suscipit ut et dolorum numquam. Quidem excepturi non voluptate, nihil nemo cumque dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptas veritatis? Dolorum provident minus veniam voluptas odit, doloremque amet tenetur error debitis a iure! Consequatur, vitae eius. Dolorum, est animi!</p>
+                        <div class="lista">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="Fotos" id="fotos">
+                        Fotos  :)
+                    </section>
+                </div>
             </main>
         </div>
     </div>
@@ -51,7 +88,7 @@
         let button = document.getElementById("button");
         let mobile = document.querySelector(".menu-mobile");
 
-        function click () {
+        function click (event) {
             if (event.type === "touchstart"){
                 event.preventDefault();
                 button.classList.toggle("activate");
