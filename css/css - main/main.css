@@ -23,7 +23,7 @@ main {
 .introducao .right {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:  baseline;
     width: 50%;
 }
 
@@ -45,7 +45,10 @@ p{
 }
 
 .img img {
+    position: absolute;
+    top: 15%;
     width: 500px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
     transition: all .5s ease-in-out;
@@ -63,6 +66,34 @@ p{
     padding: 0 20px;
 }
 
-.Cuidados{
-    
+.Cuidados .lista {
+    display: flex;
+    justify-content: center;
 }
+
+.Cuidados .lista ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.Cuidados .lista ul li{
+    transition: all .1s ease-in-out;
+    width: 100%;
+}
+
+.Cuidados .lista ul li:hover {
+    transform: scale(1.05);
+    border: 1px solid #e4e4e4;
+}
+
+.cinza {
+    background-color: #e4e4e4;
+}
+
+.Fotos {
+    width: 100%;
+}
+
