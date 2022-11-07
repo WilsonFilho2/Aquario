@@ -62,6 +62,10 @@ h2 {
     text-align: center;
 }
 
+h4 {
+    text-align: center;
+}
+
 p{
     padding: 0 20px;
 }
@@ -95,5 +99,71 @@ p{
 
 .Fotos {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 
+.carrossel {
+    width: 935px;
+    height: 520px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slides input[type=radio]{
+    display: none;
+}
+
+.slide {
+    width: 935px;
+    height: 520px;
+    transition: all .6s ease-in-out;
+}
+
+img {
+    width: 935px;
+    height: 520px;
+}
+
+.labels {
+    position: absolute;
+    bottom: -850px;
+    display: flex;
+}
+
+.navigation-labels {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:all .6s ease-in-out;
+    margin: 2px;
+}
+
+.navigation-labels:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -935px;
+}
+
+#radio3:checked ~ .first {
+    margin-left: calc(-935px * 2);
+}
+
+#radio4:checked ~ .first {
+    margin-left: calc(-935px * 3);
+}
