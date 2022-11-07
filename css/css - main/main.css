@@ -133,15 +133,15 @@ img {
 }
 
 .labels {
-    position: absolute;
     bottom: -850px;
     display: flex;
+    flex-direction: column;
 }
 
 .navigation-labels {
     width: 20px;
     height: 20px;
-    border: 2px solid white;
+    border: 2px solid var(--color_5);
     border-radius: 50%;
     cursor: pointer;
     transition:all .6s ease-in-out;
