@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/css - header/media-querys.css">
     <link rel="stylesheet" href="css/css - main/main.css">
+    <link rel="stylesheet" href="css/css - main/media-query-main.css">
     <style>
         * {
             scroll-behavior: smooth;
@@ -120,7 +121,6 @@
 
         function click (event) {
             if (event.type === "touchstart"){
-                event.preventDefault();
                 button.classList.toggle("activate");
                 mobile.classList.toggle("start");
             }
