@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <title>Calculadora</title>
 </head>
@@ -23,14 +25,52 @@
         <main>
             <h3>Calculadora para aquários</h3>
             <div class="inputs">
-                <div class="comprimento">
-                    <input type="number" name="" id="" placeholder="Coloque a altura do aquario em centímetros">
+                <div class="input">
+                    <div class="altura">
+                        <span class="material-icons">
+                            swap_vert
+                        </span>
+                        <input type="number" name="" id="altura" placeholder="Coloque a altura do aquario em centímetros">
+                    </div>
                 </div>
-                <div class="largura">
-                    <input type="number" name="" id="" placeholder="Coloque a largura do aquario em centímetros">
+                <div class="input">
+                    <div class="largura">
+                        <span class="material-icons">
+                            trending_flat
+                        </span>
+                        <input type="number" name="" id="largura" placeholder="Coloque a largura do aquario em centímetros">
+                    </div>
                 </div>
-                <div class="altura">
-                    <input type="number" name="" id="" placeholder="Coloque o comprimento do aquario em centímetros">
+                <div class="input">
+                    <div class="comprimento">
+                        <span class="material-icons">
+                            swap_horiz
+                        </span>
+                        <input type="number" name="" id="comprimento" placeholder="Coloque o comprimento do aquario em centímetros">
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="button">Calcular</button>
+                </div>
+            </div>
+            <div class="resultados">
+                <div class="resultado">
+                    <span class="material-icons">
+                        invert_colors
+                    </span>
+                    <p id="volume">Volume: </p>
+                </div>
+                <div class="resultado">
+                    <span class="material-icons">
+                        electric_meter
+                    </span>
+                    <p id="aquecedor">Aquecedor: </p>
+                </div>
+                <div class="resultado">
+                    <span class="material-icons">
+                        schedule
+                    </span>
+                    <p id="litro-hora">Litro/Hora: </p>
                 </div>
             </div>
         </main>

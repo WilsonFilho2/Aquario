@@ -78,5 +78,81 @@ main {
 
 main .inputs {
     width: 100%;
-    height: 45%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .inputs .input {
+    display: flex;
+}
+
+main .inputs .input span {
+    padding: 0 10px;
+}
+
+main .inputs div{
+    width: 100%;
+    height: 70%;
+}
+
+main .inputs div div{
+    display: flex;
+    justify-content: center;
+}
+
+main .inputs .input{
+    display: flex;
+    justify-content: center;
+}
+
+main .inputs .input input[type=number]{
+    width: 80%;
+    height: 70%;
+}
+
+main .inputs input[type=number]{
+    background: none;
+    border: none;
+    border-bottom:1px solid var(--color_1);
+} main .inputs input[type=number]:focus {
+    border: none;
+}
+
+main .inputs .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .inputs .button button {
+    width: 10%;
+    height: 60%;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+main .inputs .button button:hover{
+    background-color: #efefef;
+}
+
+h3 {
+    margin: 1% auto;
+}
+
+main .resultados {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .resultados .resultado{
+    display: flex;
+    align-items: center;
 }
