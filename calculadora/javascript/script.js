@@ -37,7 +37,7 @@ function calcular () {
         }
         //Bomba
 
-        litro_hora.innerHTML = `Litro/Hora: ${(volume_v / 6).toFixed(2)}L/H`;
+        litro_hora.innerHTML = `Litro/Hora: ${(volume_v / 5).toFixed(2)}L/H`;
 
         altura.style.borderBottom = "1px solid #060a18";
         comprimento.style.borderBottom = "1px solid #060a18";
