@@ -16,9 +16,10 @@ button.addEventListener("click", calcular);
 function calcular () {
     if (parseFloat(altura.value.length) != 0 && parseFloat(comprimento.value.length) != 0 && parseFloat(largura.value.length) != 0){ //Se nem todos os inputs receberem valores, o site trava :(
         //Volume
-        let altura_v = parseFloat(altura.value);
-        let largura_v = parseFloat(largura.value);
-        let comprimento_v = parseFloat(comprimento.value);
+        let altura_v = Math.abs(parseFloat(altura.value));
+        let largura_v = Math.abs(parseFloat(largura.value));
+        let comprimento_v = Math.abs(parseFloat(comprimento.value));
+        
         let volume_v =  altura_v * largura_v * comprimento_v / 1000
         volume.innerHTML = `Volume: ${volume_v}L`;
 
