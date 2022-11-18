@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+:root{
+    --color_1:#060a18;
+    --color_2:#0f334c;
+    --color_3:#1d688c;
+    --color_4:#2b9fc8;
+    --color_5:#2bc9c8;
+    --color_6:#ffffff;
+}
+
+
+@media  screen and (max-width: 810px) and (min-width: 491px){
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .nav-header {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header > .nav-header{
+        display: none;
+    }
+
+    .button{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .button > span::after{
+        position: absolute;
+        content: "―";
+        top: 40%;
+        right: 0%;
+    }
+
+    .button > span::before{
+        position: absolute;
+        content: "―";
+        bottom: 40%;
+        right: 0%;
+    }
+
+    .activate > span::before {
+        display: none;
+    }
+
+    @keyframes animacao-menu-1{
+        to{
+            transform: rotate(90deg);
+        }
+    }
+
+    @keyframes animacao-menu-2 {
+        to {
+            transform: rotate(45deg);
+        }
+        
+    }
+
+    .activate > span::after {
+        top: 10%;
+        right: 0.1%;
+        animation: animacao-menu-1 .5s both;
+    }
+
+    .activate > span {
+        margin-bottom: 10%;
+        animation: both animacao-menu-2 .5s;
+    }
+
+
+    .start {
+        height: 100%;
+    }
+
+    .start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+        background-image: linear-gradient(145deg, var(--color_1),var(--color_2), var(--color_3),var(--color_4),var(--color_5));
+    } .start .nav-header{
+        width: 100%;
+        height: 100%;
+    }.start .nav-header ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+        height: 100%;
+        justify-content: space-around;
+    } .start .nav-header ul li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } .start .nav-header ul li a{
+        text-decoration: none;
+        color: white;
+        width: 100%;
+    }
+}

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 98%;
+    height: 96%;
+}
+
+.introducao{
+    display: flex;
+    width: 100%;
+}
+
+.introducao .right {
+    display: flex;
+    justify-content: center;
+    align-items:  baseline;
+    width: 50%;
+}
+
+.introducao .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+p{
+    text-align: justify;
+}
+
+.img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.img img {
+    position: absolute;
+    top: 15%;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+    transition: all .5s ease-in-out;
+}
+
+.img img:hover{
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p{
+    padding: 0 20px;
+}
+
+.Cuidados .lista {
+    display: flex;
+    justify-content: center;
+}
+
+.Cuidados .lista ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.Cuidados .lista ul li{
+    transition: all .1s ease-in-out;
+    width: 100%;
+}
+
+.Cuidados .lista ul li:hover {
+    transform: scale(1.05);
+    border: 1px solid #e4e4e4;
+}
+
+.cinza {
+    background-color: #e4e4e4;
+}
+
+.Fotos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.carrossel {
+    width: 935px;
+    height: 520px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slides input[type=radio]{
+    display: none;
+}
+
+.slide {
+    width: 935px;
+    height: 520px;
+    transition: all .6s ease-in-out;
+}
+
+img {
+    width: 935px;
+    height: 520px;
+}
+
+.labels {
+    bottom: -850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-labels {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color_5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition:all .6s ease-in-out;
+    margin: 2px;
+}
+
+.navigation-labels:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -935px;
+}
+
+#radio3:checked ~ .first {
+    margin-left: calc(-935px * 2);
+}
+
+#radio4:checked ~ .first {
+    margin-left: calc(-935px * 3);
+}
